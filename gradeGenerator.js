@@ -12,7 +12,7 @@ let grade;
 
 // declaring function studentGrade
 function studentGrade(){
-// check for condition
+// check for conditions
     if (mark >= 0 && mark <= 100) {
         if (mark >= 79) {
             grade = "A";
