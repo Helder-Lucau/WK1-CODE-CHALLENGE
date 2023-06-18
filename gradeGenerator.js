@@ -9,7 +9,7 @@ A > 79, B - 60 to 79, C -  59 to 49, D - 40 to 49, E - less 40.
 const mark = prompt("Enter student mark in range of 0-100");
 let grade;
 
-// declaring a function called studentGrade
+// declaring a function called studentGrade that takes no parameters
 function studentGrade(){
 // check for condition if marks will be graded from 0-100
     if (mark >= 0 && mark <= 100) {
