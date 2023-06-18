@@ -1,18 +1,21 @@
-const grossSalary = prompt("Enter your gross salary");
-//const benefits = prompt("Enter your benefits");
+/* Net salary calculator
+The code below will get two input from the user: The gross salary and the benefits and calculate 
+an individual's Net Salary. 
+*/
+
+
+const grossSalary = prompt("Enter your gross salary"); // prompts user to enter gross salary
+//const benefits = prompt("Enter your benefits"); // prompts user to enter gross salary
 
 // function to calculate the pay as you earn 
-function payeCalculator(){
+function payeCalculator(){   
     if(grossSalary >= 0){
         if (grossSalary <= 24000){
-            const totalDeductions = grossSalary - benefits;
-            return totalDeductions* 10/100;
+            return grossSalary * 10/100;
         }else if(grossSalary >= 24001 && grossSalary <= 32333){
-            const totalDeductions = grossSalary - benefits;
-            return totalDeductions* 25/100;
+            return grossSalary * 25/100;
         }else if(grossSalary > 32333) {
-            const totalDeductions = grossSalary - benefits;
-            return totalDeductions* 30/100;
+            return grossSalary * 30/100;
         }
     } else {
         alert("Incorrect amount[No negative amount]")
@@ -22,7 +25,7 @@ payeCalculator();
 // declared function to calculate NHIF (National Health Insurance Fund)
 function healthInsurance(){
     if (grossSalary >=0 && grossSalary <=5999){
-        return rate = 150;
+        return 150;
     } else if (grossSalary >= 6000 && grossSalary <= 7999){
         return 300;
     }else if (grossSalary >= 8000 && grossSalary <= 11999){
@@ -57,11 +60,15 @@ function healthInsurance(){
         return 1700;
     }
 }
+healthInsurance();
 // declared function to calculate NSSF (National Social Security Fund)
 function socialSecurity(){
-    
+    return grossSalary * 6/100;
 }
+socialSecurity();
 //function to calculate Net salary
 function netSalary(){
 
+    alert("Your Net Salary is"+""+grossSalary - (payeCalculator(grossSalary) + healthInsurance(grossSalary) + socialSecurity(grossSalary)));
 }
+netSalary();
