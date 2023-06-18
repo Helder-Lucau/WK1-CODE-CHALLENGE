@@ -20,6 +20,10 @@ https://www.aren.co.ke/payroll/taxrates.htmLinks
 
 https://www.kra.go.ke/en/individual/calculate-tax/calculating-tax/payeLinks
 
-
+Setup:
+-Open your browser
+-Right click and select inspect
+-Go to console 
+-Copy the code and paste it on your console and press enter.
 
 
