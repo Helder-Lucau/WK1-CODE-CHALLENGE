@@ -5,14 +5,13 @@ to the below grading system:
 A > 79, B - 60 to 79, C -  59 to 49, D - 40 to 49, E - less 40.
 */
 
-git
 // prompt the user to enter student marks
 const mark = prompt("Enter student mark in range of 0-100");
 let grade;
 
-// declaring function studentGrade
+// declaring a function called studentGrade
 function studentGrade(){
-// check for conditions
+// check for condition if marks will be graded from 0-100
     if (mark >= 0 && mark <= 100) {
         if (mark >= 79) {
             grade = "A";
@@ -25,9 +24,9 @@ function studentGrade(){
         } else {
             grade = "E";
         }
-        window.alert(`You scored ${grade}`); //display message of grade scored  
+        window.alert("You scored"+" "+grade); //display message of grade scored  
     } else {
-        window.alert("Invalid marks[range 0 - 100]"); //display message if condition is false
+        window.alert("Invalid marks[range 0 - 100]"); //display message if first condition is false
     }
 }
 studentGrade(); //calling the function
