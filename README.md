@@ -1,4 +1,4 @@
-# **WEEK 1 - CODE CHALLENGE*
+# WEEK 1 - CODE CHALLENGE
 
 ## DESCRIPTION:
 ### CHALLENGE 1: Student Grade Generator. (Toy Problem.)
