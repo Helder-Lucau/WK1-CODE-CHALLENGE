@@ -59,6 +59,7 @@ function socialSecurity() {
 function payeCalculator(){ 
 
     let paye 
+    const personalRelief = 2400
 
     if (grossSalary <= 24000){
         paye = grossSalary * 0.1;
@@ -67,12 +68,14 @@ function payeCalculator(){
     } else if (grossSalary > 32333) {
         paye = grossSalary * 0.3;
         }
+    
+    paye = paye - personalRelief
     return paye
 }  
 
     //Function that calculates Net Salary
 function netSalaryCalc() {
-    
+
     const totalDeductions = payeCalculator() + healthInsurance() + socialSecurity();
     const netSalary = grossSalary - totalDeductions;
     window.alert("Your net salary is"+" "+ netSalary)
